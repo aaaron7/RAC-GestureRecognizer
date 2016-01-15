@@ -22,8 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    [[self.view rac_signalForGestureRecognizer:[UITapGestureRecognizer class]] subscribeNext:^(id x) {
-        NSLog(@"view tapped");
+    [[self.view rac_signalForGestureRecognizer:[UITapGestureRecognizer class]] subscribeNext:^(UITapGestureRecognizer * x) {
+        NSLog(@"view tapped at %f,%f", [x locationInView:x.view].x,[x locationInView:x.view].y);
     }];
 
     [[self.view rac_signalForGestureRecognizer:[UIPanGestureRecognizer class]] subscribeNext:^(id x) {
