@@ -1,5 +1,5 @@
 # RAC-GestureRecognizer
-Implemented UIView gesture recognizer integration for ReactiveCocoa 2.5
+Implemented UIView gesture recognizer integration for ReactiveCocoa 2.x
 
 
 ## Configure
