@@ -23,7 +23,7 @@
         }]];
         return [RACDisposable disposableWithBlock:^ {
             @strongify(self);
-            [self removeGestureRecognizer:subscriber];
+            [self removeGestureRecognizer:gr];
         }];
     }];
 }
